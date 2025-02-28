@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&family=Stalinist+One&display=swap');
+
+
+body{
+    background-color: #fff1ca;
+}
+
+  
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    padding: 40px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0); /* Fond opaque au début */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s, backdrop-filter 0.3s;
+    z-index: 1000;
+}
+
+
+body {
+    margin: 0px;
+}
+
+nav,
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Russo One", serif;
+}
+
+#navbar a{
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav li {
+    display: inline;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15vh;
+}
+
+.nav_link{
+    transition: .3s;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Russo One", serif;
+}
+
+
+/* Effet au scroll */
+.scrolled {
+    background: rgba(0, 0, 0, 0.3); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Effet flou */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+
+.img-propagande img{
+    width: 100%; 
+    margin-top: 45px;
+}
+
+#History{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+#History h1{
+    font-family: "Russo One", serif;
+    margin: 20px;
+    color: white;
+    font-size: 100px;
+}
+
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.typo, .auteur {
+    background-color: #cc3333;
+    padding: 20px;
+    border: none;
+    font-family: "Russo One", serif;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    width: 230px; /* Largeur initiale du bouton */
+    height: 100px; /* Hauteur initiale du bouton */
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.button-text {
+    display: block;
+}
+
+.hidden-text {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.typo.expanded, .auteur.expanded {
+    width: 600px; /* Largeur agrandie */
+    height: auto; /* Hauteur automatique pour s'adapter au texte */
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.typo.expanded .hidden-text, .auteur.expanded .hidden-text {
+    display: block;
+    opacity: 1;
+}
+
+.block{
+    background-color: black;
+    padding: 30px;
+    margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
