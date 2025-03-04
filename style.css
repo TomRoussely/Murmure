@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&family=Stalinist+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/le-murmure');
 
-
-body{
+body {
     background-color: #fff1ca;
 }
 
-  
+
 
 html {
     scroll-behavior: smooth;
@@ -20,7 +20,7 @@ header {
     left: 0;
     width: 100%;
     padding: 15px 30px;
-    background: rgba(0, 0, 0); /* Fond opaque au début */
+    background: rgba(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ a {
     font-family: "Russo One", serif;
 }
 
-#navbar a{
+#navbar a {
     padding: 10px;
 }
 
@@ -62,9 +62,9 @@ nav {
     margin-left: 15vh;
 }
 
-.nav_link{
+.nav_link {
     transition: .3s;
-} 
+}
 
 * {
     margin: 0;
@@ -79,11 +79,13 @@ body {
 
 /* Effet au scroll */
 .scrolled {
-    background: rgba(0, 0, 0, 0.3); /* Fond semi-transparent */
-    backdrop-filter: blur(10px); /* Effet flou */
+    background: rgba(0, 0, 0, 0.3);
+    /* Fond semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Effet flou */
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,12 +113,12 @@ nav a:hover {
 }
 
 
-.img-propagande img{
-    width: 100%; 
+.img-propagande img {
+    width: 100%;
     margin-top: 45px;
 }
 
-#History{
+#History {
     margin-top: 60px;
     display: flex;
     justify-content: center;
@@ -126,7 +128,7 @@ nav a:hover {
 }
 
 
-#History h1{
+#History h1 {
     font-family: "Russo One", serif;
     margin: 20px;
     color: white;
@@ -141,7 +143,8 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.typo, .auteur {
+.typo,
+.auteur {
     background-color: #cc3333;
     padding: 20px;
     border: none;
@@ -151,8 +154,10 @@ nav a:hover {
     transition: all 0.5s ease;
     cursor: pointer;
     overflow: hidden;
-    width: 230px; /* Largeur initiale du bouton */
-    height: 100px; /* Hauteur initiale du bouton */
+    width: 230px;
+    /* Largeur initiale du bouton */
+    height: 100px;
+    /* Hauteur initiale du bouton */
     position: relative;
     text-align: center;
     color: white;
@@ -170,32 +175,90 @@ nav a:hover {
     transition: opacity 0.5s ease;
 }
 
-.typo.expanded, .auteur.expanded {
-    width: 600px; /* Largeur agrandie */
-    height: auto; /* Hauteur automatique pour s'adapter au texte */
+.typo.expanded,
+.auteur.expanded {
+    width: 600px;
+    /* Largeur agrandie */
+    height: auto;
+    /* Hauteur automatique pour s'adapter au texte */
     padding: 40px;
     margin-bottom: 40px;
 }
 
-.typo.expanded .hidden-text, .auteur.expanded .hidden-text {
+.typo.expanded .hidden-text,
+.auteur.expanded .hidden-text {
     display: block;
     opacity: 1;
 }
 
 .block{
+    margin-top: 100px;
+}
+
+.img_decli {
+    display: flex;
+    justify-content: center;
+}
+
+.scrolling-text {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 90px;
+    color: #cc3333;
     background-color: black;
-    padding: 30px;
-    margin-top: 200px;
+    padding: 10px;
+    animation: scroll 10s linear infinite;
+    font-family: 'Le Murmure', sans-serif;
 }
 
 
+@keyframes scroll {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+#megaphone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.texte {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Le Murmure', sans-serif;
+}
 
-
-
-
-
-
-
+.custom-textarea {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-size: 100px;
+    font-family: 'Le Murmure', sans-serif;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
 

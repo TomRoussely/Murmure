@@ -19,3 +19,18 @@ function toggleButton(button) {
         button.classList.add('expanded');
     }
 }
+
+const textarea = document.getElementById("modernTextarea");
+
+        // Changer la couleur de la bordure en tapant
+        textarea.addEventListener("input", () => {
+            let colors = ["#00c8ff", "#ff00c8", "#00ff88", "#ffc800"];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            textarea.style.borderColor = randomColor;
+            textarea.style.boxShadow = `0 0 20px ${randomColor}`;
+        });
+
+
+
+
+  
