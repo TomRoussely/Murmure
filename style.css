@@ -3,6 +3,7 @@
 
 body {
     background-color: #fff1ca;
+    overflow-x: hidden;
 }
 
 
@@ -191,7 +192,7 @@ nav a:hover {
     opacity: 1;
 }
 
-.block{
+.block {
     margin-top: 100px;
 }
 
@@ -231,7 +232,7 @@ nav a:hover {
     }
 }
 
-#megaphone{
+#megaphone {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,3 +263,99 @@ nav a:hover {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    /* Ajustez cette valeur selon vos besoins */
+    overflow: hidden;
+    /* Empêche le débordement */
+}
+
+.list {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* Assure que la liste prend toute la largeur disponible */
+}
+
+.list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre tout l'élément <li> */
+    border-radius: 2px; 
+}
+
+.list li {
+    list-style-type: none;
+    width: 551px;
+    height: 779px;
+    opacity: 0.25;
+    border-radius: 2px;
+    background: #cc3333;
+    transition: transform 1s, opacity 1s;
+    overflow: hidden; /* Assure que l'image ne dépasse pas */
+}   
+
+.list .act {
+    opacity: 1;
+}
+
+.list .prev,
+.list .next {
+    cursor: pointer;
+}
+
+.list .prev {
+    transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+    transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+    transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+    transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+    width: 270px;
+    height: 200px;
+    background-color: green;
+    border-radius: 2px;
+    opacity: 0;
+    margin-top: 20px;
+}
+
+
+footer{
+    display: flex;
+    margin-top: 60px;
+    background-color: black;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.credit{
+    color: aliceblue;
+}
+
+.names{
+    color: white;
+}
