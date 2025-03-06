@@ -2,7 +2,7 @@ const nav = document.getElementById("nav");
 
 // Ajoute une classe au scroll
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) { // Seuil de 100px
+    if (window.scrollY > 100) { 
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
@@ -46,7 +46,7 @@ function next() {
     $(".new-next").classList.remove("new-next");
 
     const addedEl = document.createElement('li');
-    addedEl.innerHTML = '<img src="3.png" alt="">'; // Assurez-vous que le chemin de l'image est correct
+    addedEl.innerHTML = '<img src="3.png" alt="">'; 
     $(".list").appendChild(addedEl);
     addedEl.classList.add("next", "new-next");
 }
@@ -66,7 +66,7 @@ function prev() {
     $(".hide").classList.remove("hide");
 
     const addedEl = document.createElement('li');
-    addedEl.innerHTML = '<img src="1.png" alt="">'; // Assurez-vous que le chemin de l'image est correct
+    addedEl.innerHTML = '<img src="1.png" alt="">'; 
     $(".list").insertBefore(addedEl, $(".list").firstChild);
     addedEl.classList.add("hide");
 }
@@ -80,7 +80,7 @@ const slide = element => {
 }
 
 list.onclick = event => {
-    slide(event.target.closest('li')); // Utilise closest pour s'assurer que le clic est sur un <li>
+    slide(event.target.closest('li')); 
 }
 
 swipeZone.addEventListener('touchstart', event => {
